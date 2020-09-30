@@ -85,7 +85,7 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
+                <div class="project no-image shadow-large">
                     <div class="project-image">
                         <img src="images/mmx-right-small.png" />
                     </div>
@@ -95,13 +95,26 @@
                         <p>
                             An online collaborative effort of 140+ volunteers to optimize the loading of a 6,000+ part assembly, pushing the limits of Fusion 360 and requiring a massive PDM database to manage. 
                         </p>
-                        <a href="#">View Project</a>
+                        <a id="mmx-view" href="#">Learn More</a>
+                        <div id="mmx-more">
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/UYFdNwXXcac?start=551" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p style="margin-top: 15px">
+                                    The Marble Machine X (MMX) has been crazy musician Martin Molin's dream for the past 4 years, and I've been following along his journey on YouTube since the release of his first Marble Machine back in 2016. These kinetic machines use dropped marbles to strike various instruments and play music. When he announced in June 2020 that he was looking for CAD help from the community, I instantly jumped in and I haven't regreted it one bit.  
+                                </p>
+                                <p>
+                                    The MMX is modeled in Fusion 360, originally incorporating every bolt, screw, and nut that would be used in its mechanical construction. This, however, is resource-intensive and taxing for Fusion 360 to run, so the CAD team's main goal has been to defeature the assembly by removing unnecessary parts and simplifying modeled features. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <!-- End .project-info -->
+                    
+                    
                 </div>
                 <!-- End .project -->
 
-                <div class="project shadow-large">
+                <div class="project no-image shadow-large">
                     <div class="project-image">
                         <img src="images/render_sarndbox-small.png" />
                     </div>
@@ -109,9 +122,18 @@
                     <div class="project-info">
                         <h3>Augmented Reality Sandbox v2.0</h3>
                         <p>
-                            A sandbox that uses a projector, Xbox 360 Kinect, and powerful computer to project an augmented reality topographic map on the sand's surface. 
+                            A sandbox that uses a projector, Xbox 360 Kinect, and powerful computer to project an augmented reality topographic map on the sand's surface.
                         </p>
-                        <a href="#">View Project</a>
+                        <a id="ars-view" href="#">Learn More</a>
+                        <div id="ars-more">
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/W48GtjyrMsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p style="margin-top: 15px">
+                                    The Augmented Reality Sandbox (SARndbox) is a project originally created by a team of motivated students at my high school, which was showcased 
+                                </p>
+                                
+                            </div>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -128,7 +150,13 @@
                             A 4.3 octave practice marimba that breathes life back into second-hand synthetic bars with a combination of woodworking and 3D printing.
                         </p>
                         <!-- Sometimes, you can't miss out on an opportunity. And when someone offers a set of 4.3 octave marimba bars for $800 and you've always dreamt of having a practice marimba, something magical happens. -->
-                        <a href="#">View Project</a>
+                        <a id="mar-view" href="#">Learn More</a>
+                        <div id="mar-more">
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/UYFdNwXXcac?start=551" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -145,11 +173,38 @@
                             A cheap, 1-valved tuba created using PVC pipes and 3D printing to explore the feasibility of additive manufacturing in making musical instruments more accessible.
                         </p>
                         <!-- Why should people with limited money be prevented from buying a specific instrument they want to learn? This is my PVC pipe and 3D printed solution for tubas. -->
-                        <a href="#">View Project</a>
+                        <a id="tuba-view" href="#">Learn More</a>
+                        <div id="tuba-more">
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/UYFdNwXXcac?start=551" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+                
+                <a id="view-more-projects" href="#">View More Projects</a>
+                <div id="more-projects" class="row">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/project.jpg" />
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Project Name Here</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            </p>
+                            <a href="#">View Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+                
+                
             </div>
         </div>
     </div>
@@ -204,7 +259,9 @@
         <div class="education-block">
             <h3>Northeastern University</h3>
             <span class="education-date">Sept 2019 - Present</span>
-            <h4>Candidate for Bachelor of Science in Mechanical Engineering | GPA: 3.96</h4>
+            <h4 style="margin-bottom: 0px">Candidate for Bachelor of Science in Mechanical Engineering</h4>
+            <h4 style="margin-bottom: 0px">GPA: 3.96</h4>
+            <!-- 
             <ul type="square">
                 <li>
                     Awards - Dean’s Scholarship, Dean’s List
@@ -216,13 +273,16 @@
                     Activities - SEDS NUROVER (Mobility Co-Team Lead), American Society of Mechanical Engineers, Pep Band, Concert Band
                 </li>
             </ul>
+            -->
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
             <h3>Andover High School</h3>
             <span class="education-date">Sept 2015 - May 2019</span>
-            <h4>High School Diploma | GPA: 4.60 Weighted, 3.97 Unweighted </h4>
+            <h4 style="margin-bottom: 0px">High School Diploma</h4>
+            <h4 style="margin-bottom: 0px">GPA: 4.60 Weighted, 3.97 Unweighted</h4>
+            <!--
             <ul type="square">
                 <li>
                     Awards - High Honors, National Honors Society, AB Calculus, Chemistry, Physics 1
@@ -231,6 +291,7 @@
                     Activities - Robotics Club (Chief Mechanical Officer), Marching Band (Front Ensemble Section Leader), SeaPerch Club, Chemistry Club
                 </li>
             </ul>
+            -->
         </div>
         <!-- End .education-block -->
     </div>
@@ -249,6 +310,7 @@
             <li>PrusaSlicer</li>
             <li>GitHub Desktop</li>
             <li>Canva</li>
+            <li>Airtable (basic)</li>
         </ul>
         <h3 class="heading-spaceless">Programming Languages</h3>
         <ul>

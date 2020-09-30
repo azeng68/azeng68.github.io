@@ -693,9 +693,11 @@ footer {
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    top: 0;
+    // 50%
+    transform: none;
+    // translateY(-50%)
     margin-left: 300px;
     padding: 15px;
 
@@ -726,6 +728,18 @@ footer {
     display: none;
 }
 
+#mmx-more {
+    display: none;
+}
+#ars-more {
+    display: none;
+}
+#mar-more {
+    display: none;
+}
+#tuba-more {
+    display: none;
+}
 /*
     -------------------------------
     ----- 9. Skills Styles -----
@@ -1036,4 +1050,12 @@ footer {
         }
     }
 
+}
+
+
+iframe {
+  height: 180px;
+  width: 360px;
+  resize: both;
+  overflow: auto;
 }

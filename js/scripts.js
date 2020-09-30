@@ -93,5 +93,34 @@
             $('#more-projects').fadeIn(300);
         });
     });
+    
+    // Project Expanding Sections
+    $('#mmx-view').click(function(e){
+        e.preventDefault();
+        $(this).fadeOut(300, function() {
+            $('#mmx-more').fadeIn(300);
+        });
+    });
+    
+    $('#ars-view').click(function(e){
+        e.preventDefault();
+        $(this).fadeOut(300, function() {
+            $('#ars-more').fadeIn(300);
+        });
+    });
+    
+    $('#mar-view').click(function(e){
+        e.preventDefault();
+        $(this).fadeOut(300, function() {
+            $('#mar-more').fadeIn(300);
+        });
+    });
+    
+    $('#tuba-view').click(function(e){
+        e.preventDefault();
+        $(this).fadeOut(300, function() {
+            $('#tuba-more').fadeIn(300);
+        });
+    });
 
 })(jQuery);
