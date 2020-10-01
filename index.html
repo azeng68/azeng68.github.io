@@ -103,7 +103,19 @@
                                     The Marble Machine X (MMX) has been crazy musician Martin Molin's dream for the past 4 years, and I've been following along his journey on YouTube since the release of his first Marble Machine back in 2016. These kinetic machines use dropped marbles to strike various instruments and play music. When he announced in June 2020 that he was looking for CAD help from the community, I instantly jumped in and I haven't regreted it one bit.  
                                 </p>
                                 <p>
-                                    The MMX is modeled in Fusion 360, originally incorporating every bolt, screw, and nut that would be used in its mechanical construction. This, however, is resource-intensive and taxing for Fusion 360 to run, so the CAD team's main goal has been to defeature the assembly by removing unnecessary parts and simplifying modeled features. 
+                                    The MMX is modeled in Fusion 360, originally incorporating every bolt, screw, and nut that would be used in its mechanical construction. This, however, is resource-intensive and taxing for Fusion 360 to run, so the CAD team's main goal has been to defeature the assembly by removing unnecessary parts and simplifying modeled features. This process is intended to lose data on the parts, since the main priority of this first phase is to reduce loading times for the master assembly. 
+                                </p>
+                                <p>
+                                    The first part that I have modeled for the project as a CAD Team Collaborator is the Drum Marble Track. This part connects between the Drum Funnels (which collect the marbles after they hit the drums) and the Marble Collector (which funnels all the marbles back into one track). This part was pesky due to the poor implementation of 3D lines in Fusion 360 and weird detection of 3D lines for the Sweep command. Additionally, this part has gone through multiple iterations, first using a derived master sketch to properly link the Drum Track to the Collector, then using a master sketch for the entire Marble Track system to link up to the various parts within clearance.
+                                </p>
+                                <p>
+                                    Next is the Demagnetizing (Demag) Wheel. Demagnetization was not in the original MMX design, but implemented after discovering that the marbles were still magnetized to each other after being lifted toward the top of the machine. This part was rather simple to defeature since many of the plates used to create it were designed with manufacturing in mind, so they could be combined into single sketches and extrudes. 
+                                </p>
+                                <p>
+                                    Lastly, the DivideBy4. It uses a weighted plate that would tip over when four marbles roll into the part, hence dividing by four. Other than removing screws, this part could not be defeatured much since it uses several steel plates that are welded together to form a funnel after the tipping plate. 
+                                </p>
+                                <p>
+                                    After two months in, the organizers of the CAD Team put out a call for volunteers willing to lead subassembly teams. This gave birth to the CAD Team Leader role, which was to combine the individuallly modelled parts of a given subassembly to check for interferences between parts. I was able to become team leader of the Marble Paths subasssembly, which includes the parts that the marbles travel through on the top of the machine. Here are some pictures of the Marble Paths parts assembled:
                                 </p>
                             </div>
                         </div>
@@ -129,9 +141,17 @@
                             <div>
                                 <iframe src="https://www.youtube.com/embed/W48GtjyrMsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <p style="margin-top: 15px">
-                                    The Augmented Reality Sandbox (SARndbox) is a project originally created by a team of motivated students at my high school, which was showcased 
+                                    The Augmented Reality Sandbox (SARndbox) is a project originally created by a team of motivated students at my high school, which was showcased at the LearnLaunch Conference at Harvard in 2016. Since then, it was sitting unused and the Director of Strategic Innovation wanted to bring it back to life with modification that would allow frequent usage during school hours.
                                 </p>
-                                
+                                <p>
+                                    The main issue with the sandbox design was that it was made to be portable and relatively lightweight, which caused the frame and Kinect holder to sag over the years. The objectives for the new sandbox was to make it stationary, but also require minimal software recalibration, so the frame had to be made more rigid. My first step was to model the new frame design in CAD software (Fusion 360). The model can be viewed <a href="google.com">here</a>. 
+                                </p>
+                                <p>
+                                    I chose wood as the frame material since there was an abundance of it in the engineering room and it is easy to work with given the available power tools. I cut 2x4s to shape, then drilled them to their respective positions. I kept the PVC pipe that held the Kinect over the sandbox, although reinforcing its front with wood and also allowing permitting a mount for the projector.
+                                </p>
+                                <p>
+                                    Lastly, since the computer running the topographical software had been repurposed, the operating system and augmented reality sandbox software had to be reinstalled and recalibrated. After a lot of troubleshooting Ubuntu command line and reading program documentation, I was able to get the program to read Kinect 3D camera data and interpret it to project a topographic surface map on the sandbox. 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -153,8 +173,18 @@
                         <a id="mar-view" href="#">Learn More</a>
                         <div id="mar-more">
                             <div>
-                                <iframe src="https://www.youtube.com/embed/UYFdNwXXcac?start=551" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                
+                                <p>
+                                    I've always wanted to build my own marimba from raw materials due to being significantly cheaper than purchasing a new instrument. However, I have limited access to tools at my house, so such an idea is not impossible, but quite costly once tool purchasing costs are factored in. One day, while browsing the listings on a used percussion group, I found a seller for used marimba bars for $800. For context, the cheapest 4.3 octave marimba costs around $2500, with most of that cost coming from the skilled labor required for tuning of its bars. I thought this was a great deal and perfect way to get a practice instrument, so I bought the bars.
+                                </p>
+                                <p>
+                                    Once the bars arrived, I started by measuring them with calipers, and then modelling them in Fusion 360. Creating 3D models for the bars is convenient for designing and visualizing a frame, as well as gauging the total length of wood for the frame. A run to Lowes for materials, and I began constructing the frame. The frame consisted of lumber 2x4s, cut using a handsaw after marking lines with a speed square, then drilled together with 3 inch construction screws. 
+                                </p>
+                                <p>
+                                    Modeling the marimba in CAD also allowed me to design posts that would hold the paracord that runs through all the bars in a row. These were 3D printed in sets of 20 on my printer for a total of 120 posts. Holes that were slightly smaller than the diagonal of the posts were drilled into the frame to allow for a press fit that was loose enough to pull posts out in case they snapped.
+                                </p>
+                                <p>
+                                    Finally, I sanded the frame and applied two layers of polyurethane wood finish. This might be unnecessary since the frame will always be indoors, but it certainly looks nice. The final marimba plays nicely and makes a perfect practice instrument.
+                                </p>
                             </div>
                         </div>
                     </div>
