@@ -85,11 +85,15 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+                
+                
+                <!-- MMX -->
                 <div class="project no-image shadow-large">
                     <div class="project-image">
                         <img src="media/mmx-right-small.png" />
                     </div>
                     <!-- End .project-image -->
+                    
                     <div class="project-info">
                         <h3>Marble Machine X CAD Team Leader</h3>
                         <p>
@@ -102,18 +106,40 @@
                                 <p style="margin-top: 15px">
                                     The Marble Machine X (MMX) has been crazy musician Martin Molin's dream for the past 4 years, and I've been following along his journey on YouTube since the release of his first Marble Machine back in 2016. These kinetic machines use dropped marbles to strike various instruments and play music. When he announced in June 2020 that he was looking for CAD help from the community, I instantly jumped in and I haven't regreted it one bit.  
                                 </p>
+                                <a href="media/marble-paths.png">
+                                    <img style="width: 100%; padding: 10px 10px; object-fit: cover" src="media/marble-paths.png" alt="CAD Render of the Marimba">
+                                </a>
+                                <p><b>A render of the Marble Paths Pre-assembly (the assembly I am team leader of)</b></p>
                                 <p>
                                     The MMX is modeled in Fusion 360, originally incorporating every bolt, screw, and nut that would be used in its mechanical construction. This, however, is resource-intensive and taxing for Fusion 360 to run, so the CAD team's main goal has been to defeature the assembly by removing unnecessary parts and simplifying modeled features. This process is intended to lose data on the parts, since the main priority of this first phase is to reduce loading times for the master assembly. 
                                 </p>
                                 <p>
                                     The first part that I have modeled for the project as a CAD Team Collaborator is the Drum Marble Track. This part connects between the Drum Funnels (which collect the marbles after they hit the drums) and the Marble Collector (which funnels all the marbles back into one track). This part was pesky due to the poor implementation of 3D lines in Fusion 360 and weird detection of 3D lines for the Sweep command. Additionally, this part has gone through multiple iterations, first using a derived master sketch to properly link the Drum Track to the Collector, then using a master sketch for the entire Marble Track system to link up to the various parts within clearance.
                                 </p>
+                                <div>
+                                    <a href="media/drum-marble-track-gif.gif">
+                                        <img style="width: 80%; padding: 10px 10px; object-fit: cover" src="media/drum-marble-track-gif.gif"\ alt="GIF of the Drum Marble Track">
+                                    </a>
+                                    <p><b>A Pan Around the Drum Marble Track</b></p>
+                                </div>
                                 <p>
                                     Next is the Demagnetizing (Demag) Wheel. Demagnetization was not in the original MMX design, but implemented after discovering that the marbles were still magnetized to each other after being lifted toward the top of the machine. This part was rather simple to defeature since many of the plates used to create it were designed with manufacturing in mind, so they could be combined into single sketches and extrudes. 
                                 </p>
+                                <div>
+                                    <a href="media/demag-wheel-gif.gif">
+                                        <img style="width: 80%; padding: 10px 10px; object-fit: cover" src="media/demag-wheel-gif.gif"\ alt="GIF of the Demag Wheel">
+                                    </a>
+                                    <p><b>A Pan Around the Demagnetization Wheel</b></p>
+                                </div>
                                 <p>
                                     Lastly, the DivideBy4. It uses a weighted plate that would tip over when four marbles roll into the part, hence dividing by four. Other than removing screws, this part could not be defeatured much since it uses several steel plates that are welded together to form a funnel after the tipping plate. 
                                 </p>
+                                <div>
+                                    <a href="media/divideby4-gif.gif">
+                                        <img style="width: 80%; padding: 10px 10px; object-fit: cover" src="media/divideby4-gif.gif"\ alt="GIF of the DivideBy4">
+                                    </a>
+                                    <p><b>A Pan Around the Divide By 4 Mechanism</b></p>
+                                </div>
                                 <p>
                                     After two months in, the organizers of the CAD Team put out a call for volunteers willing to lead subassembly teams. This gave birth to the CAD Team Leader role, which was to combine the individuallly modelled parts of a given subassembly to check for interferences between parts. I was able to become team leader of the Marble Paths subasssembly, which includes the parts that the marbles travel through on the top of the machine. Here are some pictures of the Marble Paths parts assembled:
                                 </p>
@@ -126,6 +152,7 @@
                 </div>
                 <!-- End .project -->
 
+                <!-- SARndbox -->
                 <div class="project no-image shadow-large">
                     <div class="project-image">
                         <img src="media/render_sarndbox-small.png" />
@@ -146,12 +173,28 @@
                                 <p>
                                     The main issue with the sandbox design was that it was made to be portable and relatively lightweight, which caused the frame and Kinect holder to sag over the years. The objectives for the new sandbox was to make it stationary, but also require minimal software recalibration, so the frame had to be made more rigid. My first step was to model the new frame design in CAD software (Fusion 360). The model can be viewed <a href="google.com">here</a>. 
                                 </p>
+                                <div>
+                                    <a href="media/sarndbox-gif.gif">
+                                        <img style="height: 70vh; padding: 0.5% 0.5%" src="media/sarndbox-gif.gif"\ alt="SARndbox Full View, Orthographic">
+                                    </a>
+                                    <p><b>CAD Model of the SARndbox. Fusion 360 model can be found <a href="https://a360.co/2JMgRoj">here</a>. </b></p>
+                                </div>
                                 <p>
                                     I chose wood as the frame material since there was an abundance of it in the engineering room and it is easy to work with given the available power tools. I cut 2x4s to shape, then drilled them to their respective positions. I kept the PVC pipe that held the Kinect over the sandbox, although reinforcing its front with wood and also allowing permitting a mount for the projector.
                                 </p>
                                 <p>
                                     Lastly, since the computer running the topographical software had been repurposed, the operating system and augmented reality sandbox software had to be reinstalled and recalibrated. After a lot of troubleshooting Ubuntu command line and reading program documentation, I was able to get the program to read Kinect 3D camera data and interpret it to project a topographic surface map on the sandbox. 
                                 </p>
+                                <a href="media/sarndbox-ortho.jpg">
+                                    <img style="width: 32%; padding: 0.5% 0.5%" src="media/sarndbox-ortho.jpg"\ alt="SARndbox Full View, Orthographic">
+                                </a>
+                                <a href="media/sarndbox.jpg">
+                                    <img style="width: 32%; padding: 0.5% 0.5%" src="media/sarndbox.jpg"\ alt="SARndbox Topographic Projection View">
+                                </a>
+                                <a href="media/sarndbox-topo.jpg">
+                                    <img style="width: 32%; padding: 0.5% 0.5%" src="media/sarndbox-topo.jpg"\ alt="SARndbox Topographic Projection View">
+                                </a>
+                                <p><b>Images of the Augmented Reality Sandbox. Leftmost is a full view of the sandbox, middle is a closer view of the sand and topographic projection, and rightmost is the software running on the computer.</b></p>
                             </div>
                         </div>
                     </div>
@@ -159,6 +202,63 @@
                 </div>
                 <!-- End .project -->
                 
+                <!-- CAPStone -->
+                <div class="project no-image shadow-large">
+                    <div class="project-image">
+                        <img src="media/ptuba-small.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>High School Senior CAPStone - Plastic Tuba</h3>
+                        <p>
+                            A cheap, 1-valved tuba created using PVC pipes and 3D printing to explore the feasibility of additive manufacturing in making musical instruments more accessible.
+                        </p>
+                        <!-- Why should people with limited money be prevented from buying a specific instrument they want to learn? This is my PVC pipe and 3D printed solution for tubas. -->
+                        <a id="tuba-view" href="#">Learn More</a>
+                        <div id="tuba-more">
+                            <div>
+                                <p>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1tSS5Vu7-gCs7yOi0meZwc2ECzjZIoYtD">Click here to see an archive of some of my CAPStone work</a>
+                                </p>
+                                <iframe src="https://drive.google.com/file/d/1HQ7jce5pRbTc-WozBKR2Fucg1-N0_JnN/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p>
+                                    After growing discontent with using the old, weathered tuba lent from my high school, I began to ponder about tubas and their accessbility. The cheapest beginner tubas cost over $1000, so it's not feasible to ask a new tuba player to  purchase an instrument that they will outgrow should they choose to continue playing. It would be amazing to have a cheap, beginner tuba... 
+                                </p>
+                                <p>
+                                    That's when I thought of combining 3D printing, a technology just entering the consumer space at the time that I was interested in, with other accessible parts to construct a tuba that would be cheap enough for a beginner player to use until they decide whether tuba is for them.
+                                </p>
+                                <div>
+                                    <a href="media/IMG_20190520_223342_951.jpg">
+                                        <img style="width: 100%; padding: 0.5% 0.5%; height: 60vh; object-fit: cover" src="media/IMG_20190520_223342_951.jpg"\ alt="Image of me with the tuba on my shoulder">
+                                    </a>
+                                    <p><b>Enlarged image of me and the tuba</b></p>
+                                </div>
+                                <div>
+                                    <iframe src="https://drive.google.com/file/d/1TycB7DcH9kyQG54pfD2BB_Qcu9yIdB7I/preview" style="width: 100%; height: 90vh"></iframe>
+                                    <p><b>CAPStone Showcase Poster</b></p>
+                                </div>
+                                <div>
+                                    <a href="media/tuba.jpg">
+                                        <img style="width: 49%; padding: 0.5% 0.5%; height: 40vh; object-fit: cover" src="media/tuba-large.jpg"\ alt="Image of the tuba">
+                                    </a>
+                                    <a href="media/valve.jpg">
+                                        <img style="width: 49%; padding: 0.5% 0.5%; height: 40vh; object-fit: cover" src="media/valve-large.jpg"\ alt="Image of the valve">
+                                    </a>
+                                    <p><b>Images of the tuba without valves (left) and the the valve (right)</b></p>
+                                </div>
+                                <div>
+                                    <iframe src="https://drive.google.com/file/d/1x-y0LovOcptwWjDgTxzKL2U-RokfZK1T/preview" style="width: 100%; height: 90vh"></iframe>
+                                    <p><b>CAPStone Research Paper - Viability of Additive Manufacturing in Brass Instruments</b></p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                
+                <!-- Marimba -->
                 <div class="project no-image shadow-large">
                     <div class="project-image">
                         <img src="media/marimba-small.jpg" />
@@ -176,6 +276,12 @@
                                 <p>
                                     I've always wanted to build my own marimba from raw materials due to being significantly cheaper than purchasing a new instrument. However, I have limited access to tools at my house, so such an idea is not impossible, but quite costly once tool purchasing costs are factored in. One day, while browsing the listings on a used percussion group, I found a seller for used marimba bars for $800. For context, the cheapest 4.3 octave marimba costs around $2500, with most of that cost coming from the skilled labor required for tuning of its bars. I thought this was a great deal and perfect way to get a practice instrument, so I bought the bars.
                                 </p>
+                                <a href="media/Marimba.png">
+                                    <img style="width: 100%; padding: 10px 10px; object-fit: cover" src="media/Marimba.png" alt="CAD Render of the Marimba">
+                                </a>
+                                <a href="media/marimba-posts.png">
+                                    <img style="width: 25%; padding: 5px 5px; float: right;" src="media/marimba-posts.png"\ alt="CAD Design of the marimba posts">
+                                </a>
                                 <p>
                                     Once the bars arrived, I started by measuring them with calipers, and then modelling them in Fusion 360. Creating 3D models for the bars is convenient for designing and visualizing a frame, as well as gauging the total length of wood for the frame. A run to Lowes for materials, and I began constructing the frame. The frame consisted of lumber 2x4s, cut using a handsaw after marking lines with a speed square, then drilled together with 3 inch construction screws. 
                                 </p>
@@ -190,35 +296,7 @@
                     </div>
                     <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
-                
-                <div class="project no-image shadow-large">
-                    <div class="project-image">
-                        <img src="media/ptuba-small.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>High School Senior CAPStone - Plastic Tuba</h3>
-                        <p>
-                            A cheap, 1-valved tuba created using PVC pipes and 3D printing to explore the feasibility of additive manufacturing in making musical instruments more accessible.
-                        </p>
-                        <!-- Why should people with limited money be prevented from buying a specific instrument they want to learn? This is my PVC pipe and 3D printed solution for tubas. -->
-                        <a id="tuba-view" href="#">Learn More</a>
-                        <div id="tuba-more">
-                            <div>
-                                <p>
-                                    After growing discontent with using the old, weathered tuba lent from my high school, I began to ponder about tubas and their accessbility. The cheapest beginner tubas cost over $1000, so it's not feasible to ask a new tuba player to  purchase an instrument that they will outgrow should they choose to continue playing. It would be amazing to have a cheap, beginner tuba... 
-                                </p>
-                                <p>
-                                    That's when I thought of combining 3D printing, a technology just entering the consumer space at the time that I was interested in, with other accessible parts to construct a tuba that would be cheap enough for a beginner player to use until they decide whether tuba is for them.
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                <!-- End Marimba .project -->
                 
             </div>
         </div>
