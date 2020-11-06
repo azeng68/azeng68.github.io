@@ -1059,3 +1059,12 @@ iframe {
   resize: both;
   overflow: auto;
 }
+
+.profile-pic {
+    width: 30vh; 
+    padding: 5px;
+    border: 0.5em solid white;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
