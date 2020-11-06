@@ -1,4 +1,4 @@
-# Welcome to the back end of my portfolio!
+# Welcome to the files that generate my portfolio!
 
 This GitHub page contains my portfolio.
 
